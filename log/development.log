@@ -1,0 +1,1114 @@
+  [1m[36m (23.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCustomizings (20151008172008)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/customizing_names/" for 127.0.0.1 at 2015-10-08 19:35:51 +0200
+
+ActionController::RoutingError (No route matches [GET] "/customizing_names"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tom/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/tom/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/tom/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (26.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (92.6ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (12.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.3ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:35:57 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (5.0ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (35.0ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 5.5ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"customizings", :id=>nil} missing required keys: [:id]):
+    13:     <% @customizings.each do |customizing| %>
+    14:       <tr>
+    15:         <td><%= customizing.name %></td>
+    16:         <td><%= link_to 'Show', customizing %></td>
+    17:         <td><%= link_to 'Edit', edit_customizing_path(customizing) %></td>
+    18:         <td><%= link_to 'Destroy', customizing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    19:       </tr>
+  app/views/customizings/index.html.erb:16:in `block in _app_views_customizings_index_html_erb___815487521233751502_69918380936600'
+  app/views/customizings/index.html.erb:13:in `_app_views_customizings_index_html_erb___815487521233751502_69918380936600'
+
+
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.2ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:38:41 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (1.5ms)[0m  SELECT "customizings".* FROM "customizings"
+  Rendered customizings/index.html.erb within layouts/application (100.7ms)
+Completed 200 OK in 1727ms (Views: 1721.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:38:43 +0200
+
+
+Started GET "/customizings/3" for 127.0.0.1 at 2015-10-08 19:39:13 +0200
+Processing by CustomizingsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCustomizing Load (1.2ms)[0m  [1mSELECT  "customizings".* FROM "customizings" WHERE "customizings"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered customizings/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 142ms (Views: 113.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/customizings/12" for 127.0.0.1 at 2015-10-08 19:39:18 +0200
+Processing by CustomizingsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mCustomizing Load (0.2ms)[0m  SELECT  "customizings".* FROM "customizings" WHERE "customizings"."id" = ? LIMIT 1  [["id", 12]]
+  Rendered customizings/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (10.8ms)[0m  [1mSELECT "customizings".* FROM "customizings"[0m
+  Rendered customizings/index.html.erb within layouts/application (223.6ms)
+Completed 200 OK in 296ms (Views: 283.6ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:40:32 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:45:06 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (2.1ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.5ms)
+
+ActionView::Template::Error (undefined method `name_id' for #<Customizing:0x007f2e30217770>):
+    13:     <% @customizings.each do |customizing| %>
+    14:       <tr>
+    15: #        <td><%= customizing.id %></td>
+    16: #        <td><%= customizing.name_id %></td>
+    17:         <td><%= customizing.version %></td>
+    18: #        <td><%= customizing.feature %></td>
+    19:         <td><%= link_to 'Show', customizing %></td>
+  app/views/customizings/index.html.erb:16:in `block in _app_views_customizings_index_html_erb___815487521233751502_69918227450080'
+  app/views/customizings/index.html.erb:13:in `_app_views_customizings_index_html_erb___815487521233751502_69918227450080'
+
+
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.8ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.8ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:45:58 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.9ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (16.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"customizings", :id=>nil} missing required keys: [:id]):
+    13:     <% @customizings.each do |customizing| %>
+    14:       <tr>
+    15:         <td><%= customizing.version %></td>
+    16:         <td><%= link_to 'Show', customizing %></td>
+    17:         <td><%= link_to 'Edit', edit_customizing_path(customizing) %></td>
+    18:         <td><%= link_to 'Destroy', customizing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    19:       </tr>
+  app/views/customizings/index.html.erb:16:in `block in _app_views_customizings_index_html_erb___815487521233751502_69918384392440'
+  app/views/customizings/index.html.erb:13:in `_app_views_customizings_index_html_erb___815487521233751502_69918384392440'
+
+
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.5ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (2.1ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (101.9ms)
+Completed 200 OK in 177ms (Views: 172.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:50:58 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:53:39 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (2.0ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (155.5ms)
+Completed 200 OK in 235ms (Views: 232.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:53:40 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:55:17 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (2.1ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (139.3ms)
+Completed 200 OK in 187ms (Views: 183.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:55:18 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.7ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (110.7ms)
+Completed 200 OK in 167ms (Views: 164.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:21 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:57:54 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (15.4ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (126.5ms)
+Completed 200 OK in 173ms (Views: 156.1ms | ActiveRecord: 15.4ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:57:55 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:58:54 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (19.4ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (133.7ms)
+Completed 200 OK in 196ms (Views: 176.0ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:58:54 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:58:55 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:58:55 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:58:55 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:58:55 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:58:55 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:58:55 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:58:55 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (5.3ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (229.5ms)
+Completed 200 OK in 343ms (Views: 335.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 19:59:21 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 20:02:20 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (15.6ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (160.4ms)
+Completed 200 OK in 210ms (Views: 186.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 20:02:20 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 20:02:21 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 20:02:21 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 20:02:21 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 20:02:21 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 20:02:21 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 20:02:21 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 20:02:21 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (11.3ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (121.8ms)
+Completed 200 OK in 185ms (Views: 168.6ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:07 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.7ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (120.7ms)
+Completed 200 OK in 167ms (Views: 164.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 20:06:45 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 20:08:04 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (7.9ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (213.4ms)
+Completed 200 OK in 260ms (Views: 251.0ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 20:08:05 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (8.0ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (115.7ms)
+Completed 200 OK in 168ms (Views: 152.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 20:09:02 +0200
+
+
+Started GET "/customizings/rvs-customize-germany-edeka-lunar/edit" for 127.0.0.1 at 2015-10-08 20:15:27 +0200
+Processing by CustomizingsController#edit as HTML
+  Parameters: {"id"=>"rvs-customize-germany-edeka-lunar"}
+  [1m[35mCustomizing Load (0.6ms)[0m  SELECT  "uebersicht".* FROM "uebersicht" WHERE "uebersicht"."name" = ? LIMIT 1  [["name", "rvs-customize-germany-edeka-lunar"]]
+  Rendered customizings/_form.html.erb (25.5ms)
+  Rendered customizings/edit.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 89ms (Views: 85.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (3.1ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (149.7ms)
+Completed 200 OK in 205ms (Views: 199.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:39:29 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:40:27 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (2.4ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (161.9ms)
+Completed 200 OK in 223ms (Views: 219.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:40:27 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:40:27 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-10-08 23:40:27 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:40:27 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:40:27 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:40:27 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:40:28 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:40:28 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (10.2ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (259.1ms)
+Completed 200 OK in 321ms (Views: 308.8ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/assets/application.self-de091951efe5c85ad35c5f7d8947913242b8bac323f7ddcbb3536b47f2870f78.css?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:41:02 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (6.2ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (173.8ms)
+Completed 200 OK in 225ms (Views: 218.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/assets/application.self-74700729a381ef903b12b999d364e836141fd439d6ed3043f36511dafbfe7acd.css?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:02 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.8ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (127.3ms)
+Completed 200 OK in 170ms (Views: 167.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/assets/application.self-74700729a381ef903b12b999d364e836141fd439d6ed3043f36511dafbfe7acd.css?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:42:43 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (1.9ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (129.4ms)
+Completed 200 OK in 185ms (Views: 182.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/assets/application.self-74700729a381ef903b12b999d364e836141fd439d6ed3043f36511dafbfe7acd.css?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:44:05 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.7ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (139.8ms)
+Completed 200 OK in 195ms (Views: 187.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/assets/application.self-74700729a381ef903b12b999d364e836141fd439d6ed3043f36511dafbfe7acd.css?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:45:06 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (2.3ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (179.2ms)
+Completed 200 OK in 231ms (Views: 223.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/assets/application.self-74700729a381ef903b12b999d364e836141fd439d6ed3043f36511dafbfe7acd.css?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:46:36 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:47:40 +0200
+Processing by CustomizingsController#index as HTML
+  Rendered customizings/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tom/Data/RubyOnRails/Eco/app/views/customizings/index.html.erb:41: syntax error, unexpected $undefined
+...ffer.append=( customizing.name\:1 );@output_buffer.safe_appe...
+...                               ^):
+  app/views/customizings/index.html.erb:41: syntax error, unexpected $undefined
+
+
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.7ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (57.4ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:47:55 +0200
+Processing by CustomizingsController#index as HTML
+  Rendered customizings/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tom/Data/RubyOnRails/Eco/app/views/customizings/index.html.erb:41: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...fer.append=( customizing.name:1 );@output_buffer.safe_append...
+...                               ^):
+  app/views/customizings/index.html.erb:41: syntax error, unexpected tINTEGER, expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+
+
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (29.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.5ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:48:13 +0200
+Processing by CustomizingsController#index as HTML
+  Rendered customizings/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tom/Data/RubyOnRails/Eco/app/views/customizings/index.html.erb:41: syntax error, unexpected $undefined
+...ffer.append=( customizing.name\\:1 );@output_buffer.safe_app...
+...                               ^):
+  app/views/customizings/index.html.erb:41: syntax error, unexpected $undefined
+
+
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.7ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (24.1ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tom/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (46.3ms)
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.7ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (132.1ms)
+Completed 200 OK in 175ms (Views: 172.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/assets/application.self-74700729a381ef903b12b999d364e836141fd439d6ed3043f36511dafbfe7acd.css?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:49:00 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:50:46 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (1.9ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (194.3ms)
+Completed 200 OK in 260ms (Views: 256.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:50:46 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:50:47 +0200
+
+
+Started GET "/assets/application.self-74700729a381ef903b12b999d364e836141fd439d6ed3043f36511dafbfe7acd.css?body=1" for 127.0.0.1 at 2015-10-08 23:50:47 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:50:47 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:50:47 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:50:47 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:50:47 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:50:47 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (7.2ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (242.1ms)
+Completed 200 OK in 288ms (Views: 277.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:53:19 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:55:48 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (2.4ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (145.5ms)
+Completed 200 OK in 203ms (Views: 198.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:55:49 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.7ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (175.3ms)
+Completed 200 OK in 216ms (Views: 213.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:57:18 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (5.0ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 199ms (Views: 192.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
