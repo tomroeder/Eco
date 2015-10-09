@@ -17,8 +17,9 @@
 table#t01 {
     width: 100%;
     background-color: #f1f1c1;
-    text-align: center;
-
+    # text-align: center;
+    # text-align: left;
+    table-layout: fixed; #Spaltenbreiten von langen Worten nicht automatisch verbreitern
 }
 
 table#t01 tr:nth-child(even) {

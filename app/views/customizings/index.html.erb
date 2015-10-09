@@ -5,18 +5,13 @@
 <%= stylesheet_link_tag 'application.css' %>
 
 <table id="t01">
-   <!colgroup>
-       <col span="1" style="width: 40%;">
-       <col span="1" style="width: 30%;">
-       <col span="1" style="width: 30%;">
-    <!/colgroup>
   <thead>
     <tr>
-    <th>Name</th>
-    <th>Version</th>
-    <th>Freigabe</th>
-    <th>Datum</th>
-    <th>Feature</th>
+    <th style="width:250px">Name</th>
+    <th style="width:80px">Version</th>
+    <th style="width:120px;">Freigabe</th>
+    <th style="width:120px">Datum</th>
+    <th style="width:400px">Feature</th>
     <th>Software Min</th>
     <th>Software Max</th>
     <th>Land</th>
@@ -29,7 +24,7 @@
         <td><%= customizing.name %></td>
         <td><%= customizing.version %></td>
         <td><%= customizing.freigabe %></td>
-        <td><%= customizing.datum %></td>
+        <td style=""><%= customizing.datum %></td>
         <td><%= customizing.feature %></td>
         <td><%= customizing.software_req_min %></td>
         <td><%= customizing.software_req_max %></td>

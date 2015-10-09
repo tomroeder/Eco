@@ -1112,3 +1112,561 @@ Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-08 23:58:22 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:06:38 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (4.7ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (515.3ms)
+Completed 200 OK in 760ms (Views: 651.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:39 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (9.4ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (208.1ms)
+Completed 200 OK in 306ms (Views: 295.9ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:06:45 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (3.8ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (152.2ms)
+Completed 200 OK in 201ms (Views: 196.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:07:16 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:10:13 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (1.7ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (141.5ms)
+Completed 200 OK in 212ms (Views: 208.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:14 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.6ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (121.0ms)
+Completed 200 OK in 184ms (Views: 180.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:34 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (3.8ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (141.5ms)
+Completed 200 OK in 191ms (Views: 185.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:10:54 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:11:50 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (3.8ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (142.4ms)
+Completed 200 OK in 191ms (Views: 186.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:11:50 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:11:51 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:11:51 +0200
+
+
+Started GET "/assets/application.self-d2f1b29b5bcf0c37f8c6d31a15a5006053cd3c267bb21ab452af48e369248daf.css?body=1" for 127.0.0.1 at 2015-10-09 19:11:51 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:11:51 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:11:51 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:11:51 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:11:51 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (3.5ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (145.8ms)
+Completed 200 OK in 200ms (Views: 195.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/assets/application.self-06ccba628b4d6ff71ddc251d2a5f24bdd59c6e86b4c6f06c6905cec097563077.css?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:14:30 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.9ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (170.6ms)
+Completed 200 OK in 229ms (Views: 225.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/assets/application.self-b50cac0aef6476deb1c1a2aa11fffaa84cccf47bf4d5c89ee9ca688a5a44275b.css?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:15:53 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (3.1ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (241.9ms)
+Completed 200 OK in 311ms (Views: 306.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/assets/application.self-7baa934750cbe3dab25608ec41a9ca8c91714a9b491d951a13cf28324c3d04d8.css?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:16:41 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:18:02 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (3.1ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (203.5ms)
+Completed 200 OK in 296ms (Views: 291.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/assets/application.self-7baa934750cbe3dab25608ec41a9ca8c91714a9b491d951a13cf28324c3d04d8.css?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:18:03 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (4.7ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (123.9ms)
+Completed 200 OK in 173ms (Views: 166.9ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/assets/application.self-7baa934750cbe3dab25608ec41a9ca8c91714a9b491d951a13cf28324c3d04d8.css?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:19:54 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:21:22 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (3.5ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (124.8ms)
+Completed 200 OK in 178ms (Views: 172.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/assets/application.self-7baa934750cbe3dab25608ec41a9ca8c91714a9b491d951a13cf28324c3d04d8.css?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:21:23 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:22:11 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (1.6ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (116.7ms)
+Completed 200 OK in 169ms (Views: 166.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/assets/application.self-7baa934750cbe3dab25608ec41a9ca8c91714a9b491d951a13cf28324c3d04d8.css?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:12 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:22:45 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (2.0ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (138.7ms)
+Completed 200 OK in 181ms (Views: 177.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/assets/application.self-7baa934750cbe3dab25608ec41a9ca8c91714a9b491d951a13cf28324c3d04d8.css?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:22:46 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (2.1ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (182.5ms)
+Completed 200 OK in 221ms (Views: 217.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/assets/application.self-b796bce437742d9b1c7a83a08f2beaf95fa97e6d8505638ef81968db8deab668.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:19 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[36mCustomizing Load (1.6ms)[0m  [1mSELECT "uebersicht".* FROM "uebersicht"[0m
+  Rendered customizings/index.html.erb within layouts/application (131.0ms)
+Completed 200 OK in 180ms (Views: 176.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/assets/application.self-b796bce437742d9b1c7a83a08f2beaf95fa97e6d8505638ef81968db8deab668.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:45 +0200
+
+
+Started GET "/customizings" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+Processing by CustomizingsController#index as HTML
+  [1m[35mCustomizing Load (1.7ms)[0m  SELECT "uebersicht".* FROM "uebersicht"
+  Rendered customizings/index.html.erb within layouts/application (158.1ms)
+Completed 200 OK in 202ms (Views: 195.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/customizings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+
+
+Started GET "/assets/scaffolds.self-4ae05e53972395bd0adfffd6ee0771b9fc4dbe0ac6cb116da13cff4b6a9ff1ca.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+
+
+Started GET "/assets/application.self-b796bce437742d9b1c7a83a08f2beaf95fa97e6d8505638ef81968db8deab668.css?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+
+
+Started GET "/assets/customizings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-10-09 19:24:48 +0200
