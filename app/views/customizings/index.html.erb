@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Customizings</h1>
+
+<%= stylesheet_link_tag 'application.css' %>
+
+<table id="t01">
+   <!colgroup>
+       <col span="1" style="width: 40%;">
+       <col span="1" style="width: 30%;">
+       <col span="1" style="width: 30%;">
+    <!/colgroup>
+  <thead>
+    <tr>
+    <th>Name</th>
+    <th>Version</th>
+    <th>Freigabe</th>
+    <th>Datum</th>
+    <th>Feature</th>
+    <th>Software Min</th>
+    <th>Software Max</th>
+    <th>Land</th>
+    </tr>
+  </thead>
+<! name|version|name:1|freigabe|datum|feature|software_req_min|software_req_max|land >
+  <tbody>
+    <% @customizings.each do |customizing| %>
+      <tr>
+        <td><%= customizing.name %></td>
+        <td><%= customizing.version %></td>
+        <td><%= customizing.freigabe %></td>
+        <td><%= customizing.datum %></td>
+        <td><%= customizing.feature %></td>
+        <td><%= customizing.software_req_min %></td>
+        <td><%= customizing.software_req_max %></td>
+        <td><%= customizing.land %></td>
+        <td><%= link_to 'Show', customizing %></td>
+        <td><%= link_to 'Edit', edit_customizing_path(customizing) %></td>
+        <td><%= link_to 'Destroy', customizing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customizing', new_customizing_path %>
