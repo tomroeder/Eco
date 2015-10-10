@@ -1,4 +1,11 @@
 <p id="notice"><%= notice %></p>
+<h1>ECO Antrag</h1>
+<h2> <%= @customizing.name %> <%= @customizing.version %></h2>
+Freigabestatus : <%=  @customizing.freigabe %>
+Datum letzte Statusänderung : <%=  @customizing.datum %>
+<%=  @customizing.feature %>
+<%=  @customizing.software_req_min %>
+<%=  @customizing.software_req_max %>
 
 <%= link_to 'Edit', edit_customizing_path(@customizing) %> |
 <%= link_to 'Back', customizings_path %>
