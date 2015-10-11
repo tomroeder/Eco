@@ -1,0 +1,21 @@
+%p#notice= notice
+
+= stylesheet_link_tag 'application.css'
+
+%table#t01
+  %thead
+    %tr
+      %th Id
+      %th Name
+  %tbody
+    %tr
+      %td
+        = @customizing_name.id
+      %td
+        = @customizing_name.name
+%br
+%br
+
+= link_to 'Edit', edit_customizing_name_path(@customizing_name)
+\|
+= link_to 'Back', customizing_names_path

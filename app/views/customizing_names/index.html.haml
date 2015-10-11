@@ -1,0 +1,30 @@
+-# <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+-# <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+%head
+  %title Customizing Namen
+  %meta { http-equiv => 'Content-Type', :content => 'text/html; charset=utf-8' }/
+  = stylesheet_link_tag 'style.css'
+
+%body 
+  %div#header
+    %h1<a href="#"><img src="images/blank.png" alt="" /></a> Your <span style="font-weight:bold; color:#73868C;">Company</span> Name
+  
+  %table
+    %thead
+      %tr
+        %th
+        %th
+        %th
+  
+    %tbody
+      - @customizing_names.each do |customizing_name|
+        %tr
+          %td= link_to 'Show', customizing_name
+          %td= link_to 'Edit', edit_customizing_name_path(customizing_name)
+          %td= link_to 'Destroy', customizing_name, :method => :delete, :data => { :confirm => 'Are you sure?' }
+  
+  %br
+  
+  = link_to 'New Customizing name', new_customizing_name_path
