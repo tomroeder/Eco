@@ -8,7 +8,13 @@
 %body
   #header
     %h1
-      <a href="#"><img src="images/blank.png" alt="" /></a> Your <span style="font-weight:bold; color:#73868C;">Company</span> Name
+      %table
+        %tr
+          %th 
+            - logo = image_tag("blank.png", :alt => "")
+            = link_to logo, "#"            
+          %th 
+            Your <span style="font-weight:bold; color:#73868C;">Company</span> Name
   #container
     #navcontainer
       %ul#nav
@@ -24,7 +30,9 @@
       %h1 
         Welcome to <span style="font-weight:bold; color:#C4DA64;">Shades of Grey</span> Template
         %p
-          <img class="imgleft" src="images/info.png" alt="" /><strong> This template has been tested in Mozilla Firefox and IE7. The page validates as XHTML 1.0 Transitional using valid CSS. It will work in browser widths of 800x600, 1024x768 &amp; 1280x1064. The images used in this template are courtesy of <a href="http://www.sxc.hu/" title="free images">stock xchng</a>. The top navigation menu is from <a href="http://www.snook.ca/archives/html_and_css/improved_bullet/" title="Article:Bulletproof Slants">Article:Bulletproof Slants</a> &amp; the icons are from <a href="http://www.MouseRunner.com" title="free resources"> Mouse Runner</a>.</strong></p>
+          = image_tag("info.png", class: "imgleft", alt: "")
+          %strong 
+            This template has been tested in Mozilla Firefox and IE7. The page validates as XHTML 1.0 Transitional using valid CSS. It will work in browser widths of 800x600, 1024x768 &amp; 1280x1064. The images used in this template are courtesy of <a href="http://www.sxc.hu/" title="free images">stock xchng</a>. The top navigation menu is from <a href="http://www.snook.ca/archives/html_and_css/improved_bullet/" title="Article:Bulletproof Slants">Article:Bulletproof Slants</a> &amp; the icons are from <a href="http://www.MouseRunner.com" title="free resources"> Mouse Runner</a>.
         %p
           %strong
             %em
