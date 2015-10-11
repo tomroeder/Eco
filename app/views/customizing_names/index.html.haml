@@ -12,10 +12,14 @@
   #container
     #navcontainer
       %ul#nav
-        %li#nav-1 <a href="#">Home</a>
-        %li#nav-2 <a href="#">About</a>
-        %li#nav-3 <a href="#">Portfolio</a>
-        %li#nav-4 <a href="#">Contact</a>      
+        %li#nav-1 
+          = link_to "Home", "#"         
+        %li#nav-2
+          = link_to "About", "#"         
+        %li#nav-3
+          = link_to "Portfolio", "#"         
+        %li#nav-4      
+          = link_to "Contact", "#"         
     #contentleft
       %h1 
         Welcome to <span style="font-weight:bold; color:#C4DA64;">Shades of Grey</span> Template
@@ -34,11 +38,15 @@
         Header
       %ul
         %li
-          <a href="#"><img src="images/home.png" alt="homepage" /></a>
+          -# <a href="#"><img src="images/home.png" alt="homepage" /></a>
+          - logo = image_tag("home.png", :alt => "homepage")
+          = link_to logo, "#"
         %li
-          <a href="#"><img src="images/magnifier.png" alt="search" /></a>
+          - logo = image_tag("magnifier.png", :alt => "search")
+          = link_to logo, "#"
         %li
-          <a href="#"><img src="images/mail.png" alt="contact" /></a>
+          - logo = image_tag("mail.png", :alt => "contact")
+          = link_to logo, "#"
       %p
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque libero orci, interdum id, tempus a, gravida sed, odio. Maecenas sit amet risus in purus scelerisque molestie. <a href="#"> Read more</a> &raquo;
   
@@ -50,13 +58,37 @@
         .navlist
           %ul
             %li
-              <a href="#">Open Designs</a></li>
+              = link_to "Open Designs", "#"
             %li
-              <a href="#">Open Web Design</a></li>
+              = link_to "Open Web Design", "#"
             %li
-              <a href="#">CSS Drive</a></li>
-  
-  
+              = link_to "CSS Drive", "#"
+      .col3
+        %h1
+          Links
+        .navlist
+          %ul
+            %li
+              <a href="#">BBC News Frontpage</a>
+            %li
+              <a href="#">Hartlepool Today</a>
+            %li
+              <a href="#">SV Horizons Travelblog</a>
+      .col3
+        %h1
+          More Links
+        .navlist
+          %ul
+            %li>
+              <a href="#">Dynamic Drive CSS Library</a>
+            %li>
+              <a href="#">Listamatic</a>
+            %li>
+              <a href="#">CSS Play</a>
+
+      <a href="#">homepage</a> | <a href="mailto:denise@mitchinson.net">contact</a> | &copy; 2007 Anyone | Design by <a href="http://www.mitchinson.net"> www.mitchinson.net</a> | Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a> </div>
+    
+    
   -# %table
   -#  %thead
   -#    %tr
