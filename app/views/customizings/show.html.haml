@@ -1,0 +1,22 @@
+-# id|name_id|version|software_id|feature|freigabe_status_id|datum|software_req_min|software_req_max|land
+
+<p id="notice"><%= notice %></p>
+%h1= t('ECO Antrag')
+%h2
+  = @customizing.name_id 
+  = @customizing.version
+%h3
+  = t('Freigabestatus : ')
+  = @customizing.freigabe_status_id
+  = t('Datum letzte Statusänderung :')
+  = @customizing.software_id
+  = @customizing.datum
+  = @customizing.feature
+  = @customizing.software_req_min 
+  = @customizing.software_req_max 
+  = @customizing.land 
+  %br
+  %div
+  %br
+  = link_to 'Edit', edit_customizing_path(@customizing) |
+  = link_to 'Back', customizings_path
