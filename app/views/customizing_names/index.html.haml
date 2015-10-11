@@ -14,7 +14,7 @@
             - logo = image_tag("blank.png", :alt => "")
             = link_to logo, "#"            
           %th 
-            Your <span style="font-weight:bold; color:#73868C;">Company</span> Name
+            Verwaltung <span style="font-weight:bold; color:#73868C;">Software</span> ECO
   #container
     #navcontainer
       %ul#nav
@@ -28,36 +28,24 @@
           = link_to "Contact", "#"         
     #contentleft
       %h1 
-        Welcome to <span style="font-weight:bold; color:#C4DA64;">Shades of Grey</span> Template
-        %p
-          = image_tag("info.png", class: "imgleft", alt: "")
-          %strong 
-            This template has been tested in Mozilla Firefox and IE7. The page validates as XHTML 1.0 Transitional using valid CSS. It will work in browser widths of 800x600, 1024x768 &amp; 1280x1064. The images used in this template are courtesy of <a href="http://www.sxc.hu/" title="free images">stock xchng</a>. The top navigation menu is from <a href="http://www.snook.ca/archives/html_and_css/improved_bullet/" title="Article:Bulletproof Slants">Article:Bulletproof Slants</a> &amp; the icons are from <a href="http://www.MouseRunner.com" title="free resources"> Mouse Runner</a>.
-        %p
-          %strong
-            %em
-              For more FREE CSS templates visit <a href="http://www.mitchinson.net">my website</a>.
-        %p
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque libero orci, interdum id, tempus a, gravida sed, odio. In tincidunt, turpis eu dignissim malesuada, urna massa tincidunt sem, a pharetra turpis nisi sit amet ante. Donec accumsan, diam nec nonummy fringilla, magna quam sollicitudin tellus, quis dignissim lorem dolor non dolor. Fusce vitae arcu. Duis sodales rutrum quam. Aenean nisi. Nullam vel justo sit amet tortor ullamcorper tempor. Praesent fermentum, massa ac tincidunt semper, massa elit malesuada ipsum, euismod commodo tortor arcu iaculis metus. Etiam hendrerit libero eu ante. Cras elit lectus, adipiscing a, sollicitudin eget, varius non, ipsum. Praesent ac massa. Duis pellentesque. Maecenas sit amet risus in purus scelerisque molestie. Sed posuere ullamcorper velit.</p>
-        %p
-          Nullam pulvinar sagittis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi luctus eros eu eros. Duis blandit nonummy risus. Pellentesque et nisl in quam ultrices ultricies. Proin egestas, massa ac consectetuer imperdiet, nibh elit ultricies turpis, at consequat eros nibh vitae felis. In blandit. In sit amet orci quis tellus hendrerit tempus. Donec porttitor massa id nulla. Nunc sem metus, dapibus id, hendrerit vitae, auctor nec, risus.</p>
-    #contentright
-      %h2
-        Header
-      %ul
-        %li
-          -# <a href="#"><img src="images/home.png" alt="homepage" /></a>
-          - logo = image_tag("home.png", :alt => "homepage")
-          = link_to logo, "#"
-        %li
-          - logo = image_tag("magnifier.png", :alt => "search")
-          = link_to logo, "#"
-        %li
-          - logo = image_tag("mail.png", :alt => "contact")
-          = link_to logo, "#"
-      %p
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque libero orci, interdum id, tempus a, gravida sed, odio. Maecenas sit amet risus in purus scelerisque molestie. <a href="#"> Read more</a> &raquo;
+        <span style="font-weight:bold; color:#C4DA64;">Software-Paket Namen</span> 
   
+        %table
+          %thead
+            %tr
+              %th
+              %th
+              %th
+        
+          %tbody
+            - @customizing_names.each do |customizing_name|
+              %tr
+                %td= customizing_name.id
+                %td= customizing_name.name
+                %td= link_to 'Show', customizing_name
+                %td= link_to 'Edit', edit_customizing_name_path(customizing_name)
+                %td= link_to 'Destroy', customizing_name, :method => :delete, :data => { :confirm => 'Are you sure?' }
+          
   #footer
     #bottom
       .col3center
