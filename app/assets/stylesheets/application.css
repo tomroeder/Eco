@@ -14,21 +14,4 @@
  *= require_self
  */
 
-table#t01 {
-    width: 100%;
-    background-color: #f1f1c1;
-    # text-align: center;
-    # text-align: left;
-    table-layout: fixed; #Spaltenbreiten von langen Worten nicht automatisch verbreitern
-}
 
-table#t01 tr:nth-child(even) {
-    background-color: #eee;
-}
-table#t01 tr:nth-child(odd) {
-    background-color: #fff;
-}
-table#t01 th {
-    color: white;
-    background-color: black;
-}  

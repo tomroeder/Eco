@@ -1,46 +1,49 @@
+= render('common/header')
 
-%h1 Listing Customizings
-
--# id|name_id|version|software_id|feature|freigabe_status_id|datum|software_req_min|software_req_max|land
-
-= stylesheet_link_tag 'application.css'
-
-%table#t01
-  %thead
-    %tr
-      %th Name
-      %th Version
-      %th Freigabe
-      %th Datum
-      %th Feature
-      %th Software Min
-      %th Software Max
-      %th style="width:100px" Land
-  %tbody
-    - @customizings.each do |customizing|
-      %tr
-        %td 
-          =customizing.name_id
-        %td 
-          =customizing.version
-        %td 
-          =customizing.freigabe_status_id
-        %td
-          =customizing.datum
-        %td
-          =customizing.feature
-        %td
-          =customizing.software_req_min
-        %td
-          =customizing.software_req_max
-        %td
-          =customizing.land
-        %td
-          =link_to 'Show', customizing
-        %td
-          =link_to 'Edit', edit_customizing_path(customizing)
-        %td
-          = link_to 'Destroy', customizing, method: :delete, data: { confirm: 'Are you sure?' }
-%br
-
-= link_to 'New Customizing', new_customizing_path
+%body
+  %h1 
+    <span style="font-weight:bold; color:#C4DA64;">Software-Paket Freigaben</span> 
+    -# = @customizings.find(1)
+  
+    %table#t01
+      %thead
+        %tr
+          %th Name
+          %th Version
+          %th Freigabe
+          %th Datum
+          %th Feature
+          %th Software Min
+          %th Software Max
+          %th Land
+          %th
+          %th
+          %th
+      %tbody
+        - @customizings.each do |customizing|
+          %tr
+            %td 
+              = customizing.name_id
+            %td 
+              =customizing.version
+            %td 
+              =customizing.freigabe_status_id
+            %td
+              =customizing.datum
+            %td
+              =customizing.feature
+            %td
+              =customizing.software_req_min
+            %td
+              =customizing.software_req_max
+            %td
+              =customizing.land
+            %td
+              =link_to 'Show', customizing
+            %td
+              =link_to 'Edit', edit_customizing_path(customizing)
+            %td
+              = link_to 'Destroy', customizing, method: :delete, data: { confirm: 'Are you sure?' }
+  %br
+  
+  = link_to 'New Customizing', new_customizing_path
