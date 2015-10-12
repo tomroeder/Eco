@@ -2,3 +2,26 @@
   %title customizing_names
   -# %meta { http-equiv => 'Content-Type', :content => 'text/html; charset=utf-8' }/
   = stylesheet_link_tag 'style.css'
+
+  #header
+    %h1
+      %table
+        %tr
+          %th 
+            - logo = image_tag("blank.png", :alt => "")
+            = link_to logo, "#"            
+          %th 
+            Verwaltung <span style="font-weight:bold; color:#73868C;">Software</span> ECO
+  
+  #container
+    #navcontainer
+      %ul#nav
+        %li#nav-1 
+          = link_to "Home", "#"         
+        %li#nav-2
+          = link_to "About", "#"         
+        %li#nav-3
+          = link_to "Portfolio", "#"         
+        %li#nav-4      
+          = link_to "Contact", "#"         
+  
