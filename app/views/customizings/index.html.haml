@@ -3,7 +3,10 @@
 %body
   %h1 
     <span style="font-weight:bold; color:#C4DA64;">Software-Paket Freigaben</span> 
-    -# = @customizings.find(1)
+    test 
+    %br
+    -# = @customizings.find(10).version
+    =  @customizings.find(10).customizing_name.name
   
     %table#t01
       %thead
@@ -24,7 +27,7 @@
           %tr
             %td 
               = customizing.name_id
-              -# = customizing.customizing_names.name
+              -# = customizing.customizing_name.id
             %td 
               =customizing.version
             %td 

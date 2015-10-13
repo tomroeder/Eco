@@ -4,5 +4,5 @@ class Customizing < ActiveRecord::Base
   self.table_name = "customizings"
   
   # Tabellenbeziehungen für RoR bekanntgeben 
-  # belongs_to :customizing_name, class_name: "CustomizingName", foreign_key: "name_id"
+  belongs_to :customizing_name, class_name: "CustomizingName" , foreign_key: "name_id"
 end
