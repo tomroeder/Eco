@@ -4,6 +4,11 @@ padding: 0;
 font: 75% tahoma, Verdana, Arial, sans-serif;
 line-height: 1.8em;
 background: #eaeaea  url(images/bg.jpg) top left repeat-x;
+
+# font-family: Georgia, serif;
+# font-size: 180%;
+# padding: 30px 0 10px 0;
+# color: #73868c;
 }
 		/*TOP BANNER*/
 #header {
