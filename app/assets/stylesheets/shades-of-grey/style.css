@@ -150,7 +150,7 @@ margin: 0;
 table#t01 {
     width: 100%;
     text-align: left;
-    table-layout: fixed; #Spaltenbreiten von langen Worten nicht automatisch verbreitern
+    # table-layout: fixed; #Spaltenbreiten von langen Worten nicht automatisch verbreitern
 }
 
 table#t01 tr:nth-child(even) {
@@ -162,4 +162,4 @@ table#t01 tr:nth-child(odd) {
 table#t01 th {
     # color: white;
     background-color: #e1e1e1;
-}  
+}

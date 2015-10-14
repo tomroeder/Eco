@@ -3,10 +3,6 @@
 %body
   %h1 
     <span style="font-weight:bold; color:#C4DA64;">Software-Paket Freigaben</span> 
-    test 
-    %br
-    -# = @customizings.find(10).version
-    =  @customizings.find(10).customizing_name.name
   
     %table#t01
       %thead
@@ -25,9 +21,11 @@
       %tbody
         - @customizings.each do |customizing|
           %tr
-            %td 
-              = customizing.name_id
-              -# = customizing.customizing_name.id
+            %td              
+              - if customizing.customizing_name == nil
+                <span style = "color:#ff0000;"> Datenbank-Fehler </span>
+              - else
+                = customizing.customizing_name.name;
             %td 
               =customizing.version
             %td 
