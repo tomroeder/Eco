@@ -4,18 +4,25 @@
 %h2
   = @customizing.customizing_name.name 
   = @customizing.version
-%h3
+%p
   = t('Freigabestatus : ')
-  = @customizing.freigabe_status_id
+  - if @customizing.freigabe_status != nil
+    = @customizing.freigabe_status.freigabe
+%p  
   = t('Datum letzte Statusänderung :')
   = @customizing.software_id
+%p
   = @customizing.datum
+%p
   = @customizing.feature
+%p
   = @customizing.software_req_min 
+%p
   = @customizing.software_req_max 
+%p
   = @customizing.land 
-  %br
-  %div
-  %br
-  = link_to 'Edit', edit_customizing_path(@customizing) |
-  = link_to 'Back', customizings_path
+%br
+%div
+%br
+= link_to 'Edit', edit_customizing_path(@customizing) |
+= link_to 'Back', customizings_path
