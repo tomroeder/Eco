@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :softwares
   resources :freigabe_statuses
   get 'welcome/index'
 
