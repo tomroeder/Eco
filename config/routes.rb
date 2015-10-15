@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :freigabe_statuses
   get 'welcome/index'
 
   resources :customizing_names

@@ -1,0 +1,2 @@
+module FreigabeStatusesHelper
+end

@@ -1,0 +1,10 @@
+= form_for @freigabe_status do |f|
+  - if @freigabe_status.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@freigabe_status.errors.count, "error")} prohibited this freigabe_status from being saved:"
+      %ul
+        - @freigabe_status.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'

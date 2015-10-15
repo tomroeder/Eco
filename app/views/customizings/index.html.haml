@@ -29,7 +29,11 @@
             %td 
               =customizing.version
             %td 
-              =customizing.freigabe_status_id
+              -# =customizing.freigabe_status_id
+              - if customizing.freigabe_status == nil
+                <span style = "color:#ff0000;"> Datenbank-Fehler </span>
+              - else
+                = customizing.freigabe_status.freigabe;
             %td
               =customizing.datum
             %td

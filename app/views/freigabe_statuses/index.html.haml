@@ -1,0 +1,19 @@
+%h1 Listing freigabe_statuses
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+  %tbody
+    - @freigabe_statuses.each do |freigabe_status|
+      %tr
+        %td= link_to 'Show', freigabe_status
+        %td= link_to 'Edit', edit_freigabe_status_path(freigabe_status)
+        %td= link_to 'Destroy', freigabe_status, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Freigabe status', new_freigabe_status_path
