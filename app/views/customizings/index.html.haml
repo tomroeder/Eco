@@ -12,6 +12,7 @@
           %th Freigabe
           %th Datum
           %th Feature
+          %th Software
           %th Software Min
           %th Software Max
           %th Land
@@ -29,15 +30,46 @@
             %td 
               =customizing.version
             %td 
-              -# =customizing.freigabe_status_id
               - if customizing.freigabe_status == nil
-                <span style = "color:#ff0000;"> Datenbank-Fehler </span>
+                %span{ :style => "color:red;" }
+                  Datenbank-Fehler
               - else
-                = customizing.freigabe_status.freigabe;
+
+                - case customizing.freigabe_status.id
+                  - when 1
+                    - color = "color:black"
+                    %span{ :style => color }
+                      = customizing.freigabe_status.freigabe
+                  - when 2
+                    - color = "color:red"
+                    %span{ :style => color }
+                      = customizing.freigabe_status.freigabe
+                  - when 5 
+                    - color = "color:#AEB404"
+                    %span{ :style => color }
+                      = customizing.freigabe_status.freigabe
+                  - when 6 
+                    - color = "color:#31B404"
+                    %span{ :style => color }
+                      = customizing.freigabe_status.freigabe
+                  - when 7 
+                    - color = "color:#21610B"
+                    %span{ :style => color }
+                      = customizing.freigabe_status.freigabe
+                  -else
+                    - color = "color:grey"
+                    %span{ :style => color }
+                      = customizing.freigabe_status.freigabe
             %td
               =customizing.datum
             %td
               =customizing.feature
+            %td
+              - if customizing.software == nil
+                %span{ :style => "color:red;" }
+                  Datenbank-Fehler
+              - else              
+                =customizing.software.name
             %td
               =customizing.software_req_min
             %td

@@ -1,6 +1,5 @@
 class CustomizingName < ActiveRecord::Base
   self.table_name = "customizing_names"
-  self.primary_key = "id"
   
   # Tabellenbeziehungen für RoR bekanntgeben 
   # Bsp: customizing_name.customizings.size

@@ -11,7 +11,10 @@
             - logo = image_tag("blank.png", :alt => "")
             = link_to logo, "#"            
           %th 
-            Verwaltung <span style="font-weight:bold; color:#73868C;">Software</span> ECO
+            Verwaltung 
+            %span{ :style => "font-weight:bold; color:#73868C;" }
+              Software
+            ECO
   
   #container
     #navcontainer
@@ -23,7 +26,8 @@
         %li#nav-3      
           = link_to "Namen", controller: 'customizing_names'         
         %li#nav-4
-          = link_to "Über", "#"         
-          
+          = link_to "Freigabe Stati", "#"         
+        %li#nav-5
+          = link_to "Software", "#"            
   %br     
   
