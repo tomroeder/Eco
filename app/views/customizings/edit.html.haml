@@ -1,0 +1,10 @@
+= render('common/header')
+
+%body
+  %h1
+    Freigabe bearbeiten
+
+    = render 'form'
+    
+    = link_to 'Zeigen', @customizing |
+    = link_to 'Zurück', customizings_path

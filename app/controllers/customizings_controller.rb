@@ -69,6 +69,7 @@ class CustomizingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def customizing_params
-      params[:customizing]
+      params.require(:customizing).permit(:id, :name_id, :version, :software_id, :feature, :freigabe_status_id, :software_req_min, :software_req_max) 
+      # params[:customizing]
     end
 end
