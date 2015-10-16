@@ -8,6 +8,19 @@
   -# and the form will (by default) send a POST request to that route. 
   -# This is associated with the create action of the current controller, the CustomizingsController.
   = form_for :customizing, url: customizings_path do |c|
+  
+    -# Fehlerbehandlung (siehe auch controller, create Methode)
+    - if @customizing.errors.any? 
+      #error_explanation
+        %h2
+          Freigabeantrag konnte nicht gespeichert werden.
+          %br
+          = @customizing.errors.count
+          Fehler: 
+        %ul
+          = @customizing.errors.full_messages.each do |msg| 
+            %li
+              = msg
     %p
       = c.label :id
       = c.date_field :id 
@@ -28,16 +41,12 @@
       = c.text_field :freigabe_status_id 
     %p
       = c.label :software_req_min
-      = c.text_field :software_req_min 
+      = c.text_field :software_req_min
     %p
       = c.label :software_req_max
       = c.text_field :software_req_max 
     %p
-      -# = c.date_field :datum
-      -# = c.label :datum
-      -# = c.text_field :datum 
-    %p
-      = c.submit # Submit Button
+      = c.submit "Freigabeantrag speichern" # Submit Button
 
   -# = render 'form' 
   = link_to 'Back', customizings_path

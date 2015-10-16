@@ -1,6 +1,7 @@
 class CustomizingsController < ApplicationController
   before_action :set_customizing, only: [:show, :edit, :update, :destroy]
 
+  
   # GET /customizings
   # GET /customizings.json
   def index

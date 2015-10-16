@@ -7,6 +7,7 @@
     %table#t01
       %thead
         %tr
+          %th Id
           %th Name
           %th Version
           %th Freigabe
@@ -22,6 +23,8 @@
       %tbody
         - @customizings.each do |customizing|
           %tr
+            %td
+              =customizing.id
             %td              
               - if customizing.customizing_name == nil
                 <span style = "color:#ff0000;"> Datenbank-Fehler </span>
