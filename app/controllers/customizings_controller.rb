@@ -5,7 +5,7 @@ class CustomizingsController < ApplicationController
   # GET /customizings
   # GET /customizings.json
   def index
-    @customizings = Customizing.all
+    @customizings = Customizing.all()
   end
 
   # GET /customizings/1

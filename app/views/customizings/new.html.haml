@@ -26,13 +26,14 @@
       = c.date_field :id 
     %p
       = c.label :name_id
-      = c.text_field :name_id 
+      -# Alphabt. Sortierung : im Controller  default_scope { order('customizing_names.name ASC') } 
+      = c.collection_select(:name_id, CustomizingName.all, :id, :name)
     %p
       = c.label :version
       = c.text_field :version 
     %p
       = c.label :software_id
-      = c.text_field :software_id 
+      = c.collection_select(:software_id, Software.all, :id, :name)
     %p
       = c.label :feature
       = c.text_field :feature 
@@ -41,13 +42,15 @@
       
       -# ---------------------------------------------------------------------------------------------------------
       -# http://api.rubyonrails.org/classes/ActionView/Helpers/FormOptionsHelper.html#method-i-collection_select
+      -# http://stackoverflow.com/questions/15536264/registration-forms-and-foreign-keys-in-rails
+      -#
       -# object.collection_select(method, collection, value_method, text_method, options = {}, html_options = {})
       -# 
       -# :freigabe_status_id : Variable, an die der zurückgegebene Wert gebunden wird
       -# FreigabeStatus.all : Collection, auf welche die Auswahl basieren soll
       -# :id : Variable bzw. Spalte aus der Collection, welche als Wert zurückgegeben werden soll
       -# :freigabe : Variable bzw. Spalte aus der Collection, welche in der GUI angezeigt werde soll (soll ja i.d.R. nicht die id sein)
-      -# 
+      -# Keine weitere Änderung im Controller notwendig 
       = c.collection_select(:freigabe_status_id, FreigabeStatus.all, :id, :freigabe)
       -# 
       -# ---------------------------------------------------------------------------------------------------------
