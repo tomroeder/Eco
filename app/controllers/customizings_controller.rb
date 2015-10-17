@@ -26,7 +26,8 @@ class CustomizingsController < ApplicationController
   # POST /customizings.json
   def create
     @customizing = Customizing.new(customizing_params)
-
+    # params[:goal][:user_id]
+    # params :c, :freigabe_status_id
     respond_to do |format|
       if @customizing.save
         format.html { redirect_to @customizing, notice: 'Customizing was successfully created.' }

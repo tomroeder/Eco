@@ -38,7 +38,19 @@
       = c.text_field :feature 
     %p
       = c.label :freigabe_status_id
-      = c.text_field :freigabe_status_id 
+      
+      -# ---------------------------------------------------------------------------------------------------------
+      -# http://api.rubyonrails.org/classes/ActionView/Helpers/FormOptionsHelper.html#method-i-collection_select
+      -# object.collection_select(method, collection, value_method, text_method, options = {}, html_options = {})
+      -# 
+      -# :freigabe_status_id : Variable, an die der zurückgegebene Wert gebunden wird
+      -# FreigabeStatus.all : Collection, auf welche die Auswahl basieren soll
+      -# :id : Variable bzw. Spalte aus der Collection, welche als Wert zurückgegeben werden soll
+      -# :freigabe : Variable bzw. Spalte aus der Collection, welche in der GUI angezeigt werde soll (soll ja i.d.R. nicht die id sein)
+      -# 
+      = c.collection_select(:freigabe_status_id, FreigabeStatus.all, :id, :freigabe)
+      -# 
+      -# ---------------------------------------------------------------------------------------------------------
     %p
       = c.label :software_req_min
       = c.text_field :software_req_min
