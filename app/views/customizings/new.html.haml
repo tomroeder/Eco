@@ -22,9 +22,6 @@
             %li
               = msg
     %p
-      = c.label :id
-      = c.date_field :id 
-    %p
       = c.label :name_id
       -# Alphabt. Sortierung : im Controller  default_scope { order('customizing_names.name ASC') } 
       = c.collection_select(:name_id, CustomizingName.all, :id, :name)
