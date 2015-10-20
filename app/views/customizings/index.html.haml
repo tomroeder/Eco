@@ -2,18 +2,34 @@
 
 %body
   %h1 
-    <span style="font-weight:bold; color:#C4DA64;">Software-Paket Freigaben</span> 
-  
+    <span style="font-weight:bold; color:#C4DA64;">Software-Paket Freigaben</span>
+
+    -# http://stackoverflow.com/questions/6885990/rails-params-explained
+    %p
+      = form_tag("/customizings/", method: "get") do 
+        = select_tag(:software, options_for_select([['rvm2', 1], ['Rvs', 2]], 2))       
+        = submit_tag("Filter") 
+        
+
+
     %table#t01
       %thead
         %tr
           %th Id
           %th Name
           %th Version
-          %th Freigabe
+          %th 
+            Freigabe
+            = form_tag("/customizings/", method: "get") do 
+              = select_tag(:freigabestat, options_for_select([['5', 5], ['6', 6], ['7', 7]], 5))       
+              = submit_tag("Filter") 
           %th Datum
           %th Feature
-          %th Software
+          %th 
+            Software
+            = form_tag("/customizings/", method: "get") do 
+              = select_tag(:software, options_for_select([['rvm2', 1], ['Rvs', 2]], 2))       
+              = submit_tag("Filter") 
           %th Software Min
           %th Software Max
           %th Land
@@ -22,6 +38,7 @@
           %th
       %tbody
         - @customizings.each do |customizing|
+          -# @filteredCustomizings.each do |customizing|
           %tr
             %td
               =customizing.id
@@ -69,8 +86,7 @@
               =customizing.feature
             %td
               - if customizing.software == nil
-                %span{ :style => "color:red;" }
-                  Datenbank-Fehler
+                \---
               - else              
                 =customizing.software.name
             %td

@@ -21,5 +21,6 @@ class Customizing < ActiveRecord::Base
   belongs_to :freigabe_status, class_name: "FreigabeStatus" , foreign_key: "freigabe_status_id"
   belongs_to :software, class_name: "Software" , foreign_key: "software_id"
   
-   TEMPERATURES = ['hot', 'medium', 'cold']
+  #Test only
+  scope :software, -> (software_id) { where software_id: software_id }
 end

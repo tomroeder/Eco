@@ -1,11 +1,21 @@
-class CustomizingsController < ApplicationController
+  
+  class CustomizingsController < ApplicationController
   before_action :set_customizing, only: [:show, :edit, :update, :destroy]
-
   
   # GET /customizings
   # GET /customizings.json
   def index
-    @customizings = Customizing.all()
+    
+    # Z.b. für Anfragen per http://localhost:3000/customizings?software=2
+    # erfordert auch im Modell : scope :software, -> (software_id) { where software_id: software_id }
+    # Siehe auch : http://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloating-your-controller/
+    if params[:software].present?
+      @customizings = Customizing.where(nil) # creates an anonymous scope
+      @customizings = @customizings.software(params[:software]) if params[:software].present?
+    else
+      # Für Anfragen per http://localhost:3000/customizings
+      @customizings = Customizing.all()
+    end
   end
 
   # GET /customizings/1
