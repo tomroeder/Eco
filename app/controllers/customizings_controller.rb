@@ -6,12 +6,12 @@
   # GET /customizings.json
   def index
     
-    # Z.b. für Anfragen per http://localhost:3000/customizings?software=2
-    # erfordert auch im Modell : scope :software, -> (software_id) { where software_id: software_id }
-    # Siehe auch : http://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloating-your-controller/
+    @customizings = Customizing.where(nil) # creates an anonymous scope
+    # Filteranfragen beantworten
     if params[:software].present?
-      @customizings = Customizing.where(nil) # creates an anonymous scope
-      @customizings = @customizings.software(params[:software]) if params[:software].present?
+      @customizings = @customizings.scope_software(params[:software]) if params[:software].present?
+    elsif params[:freigabestat].present?
+      @customizings = @customizings.scope_freigabe(params[:freigabestat]) if params[:freigabestat].present?
     else
       # Für Anfragen per http://localhost:3000/customizings
       @customizings = Customizing.all()

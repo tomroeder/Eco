@@ -5,12 +5,6 @@
     <span style="font-weight:bold; color:#C4DA64;">Software-Paket Freigaben</span>
 
     -# http://stackoverflow.com/questions/6885990/rails-params-explained
-    %p
-      = form_tag("/customizings/", method: "get") do 
-        = select_tag(:software, options_for_select([['rvm2', 1], ['Rvs', 2]], 2))       
-        = submit_tag("Filter") 
-        
-
 
     %table#t01
       %thead
@@ -19,16 +13,18 @@
           %th Name
           %th Version
           %th 
+            -# https://kernelgarden.wordpress.com/2014/02/26/dynamic-select-boxes-in-rails-4/
+            -# options_for_select dynamic
             Freigabe
-            = form_tag("/customizings/", method: "get") do 
-              = select_tag(:freigabestat, options_for_select([['5', 5], ['6', 6], ['7', 7]], 5))       
+            = form_tag(customizings_path, method: "get") do             
+              = select_tag(:freigabestat, options_from_collection_for_select(FreigabeStatus.all, :id, :freigabe) )       
               = submit_tag("Filter") 
           %th Datum
           %th Feature
           %th 
             Software
-            = form_tag("/customizings/", method: "get") do 
-              = select_tag(:software, options_for_select([['rvm2', 1], ['Rvs', 2]], 2))       
+            = form_tag(customizings_path, method: "get") do
+              = select_tag(:software, options_from_collection_for_select(Software.all, :id, :name))       
               = submit_tag("Filter") 
           %th Software Min
           %th Software Max
