@@ -6,4 +6,5 @@ class CustomizingName < ActiveRecord::Base
   has_many :customizings , class_name: "Customizing", foreign_key: "name_id" #ok
   
   default_scope { order('customizing_names.name ASC') } 
+
 end

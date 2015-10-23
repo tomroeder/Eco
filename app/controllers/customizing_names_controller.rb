@@ -3,8 +3,14 @@ class CustomizingNamesController < ApplicationController
 
   # GET /customizing_names
   # GET /customizing_names.json
-  def index
-    @customizing_names = CustomizingName.all
+  def index    
+    @customizing_names = CustomizingName.where(nil) # creates an anonymous scope
+    # Filteranfragen beantworten
+    if params[:name_search_text].present?
+      @customizing_names = CustomizingName.where('name LIKE ?', '%' + params[:name_search_text] + '%').all
+    else
+      @customizing_names = CustomizingName.all
+    end
   end
 
   # GET /customizing_names/1

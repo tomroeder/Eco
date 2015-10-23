@@ -21,6 +21,8 @@ class Customizing < ActiveRecord::Base
   belongs_to :freigabe_status, class_name: "FreigabeStatus" , foreign_key: "freigabe_status_id"
   belongs_to :software, class_name: "Software" , foreign_key: "software_id"
   
-  scope :scope_software, -> (software_id) { where software_id: software_id }
-  scope :scope_freigabe, -> (freigabe_status_id) { where freigabe_status_id: freigabe_status_id }
+  # Scopes für Filterfunktionen (erzeugen die entsprechend passen Funktionen zum filtern)
+  scope :scope_software, -> (id) { where software_id: id }
+  scope :scope_freigabe, -> (id) { where freigabe_status_id: id }
+  
 end

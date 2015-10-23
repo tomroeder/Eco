@@ -10,7 +10,11 @@
       %thead
         %tr
           %th Id
-          %th Name
+          %th 
+            Name
+            = form_tag(customizings_path, method: "get") do 
+              = text_field_tag(:name_search_text)
+              = submit_tag("Filter")
           %th Version
           %th 
             -# https://kernelgarden.wordpress.com/2014/02/26/dynamic-select-boxes-in-rails-4/
