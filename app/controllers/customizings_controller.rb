@@ -14,9 +14,11 @@
       @customizings = @customizings.scope_freigabe(params[:freigabestat]) if params[:freigabestat].present?
     elsif params[:name_search_text].present?
       # ID's in Namen-Tabelle finden wie unten, dann unten mit IDs filtern
-      # @customizings = @customizings.where('customizing_name LIKE ?', '%edeka%').all
-      # CustomizingName.search('kaisers')
-      @customizings = Customizing.all()
+      customizing_names = CustomizingName.where('name LIKE ?', '%' + params[:name_search_text] + '%').all
+      @customizings.clear()
+      customizing_names.each do |name|
+        @customizings += Customizing.where("name_id = ?", name.id)
+      end
     else
       # Für Anfragen per http://localhost:3000/customizings
       @customizings = Customizing.all()
